@@ -32,6 +32,8 @@ If @error Then
 	Exit
 EndIf
 
+ProcessClose("XlNetAcc.exe")
+ProcessWaitClose("XlNetAcc.exe")
 ConsoleWrite("$path = " & $path)
 Run($path)
 WinWait("迅雷快鸟", "", 15)
